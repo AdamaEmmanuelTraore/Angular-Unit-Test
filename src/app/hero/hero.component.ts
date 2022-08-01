@@ -12,6 +12,6 @@ export class HeroComponent {
 
   onDeleteClick($event: any): void {
     $event.stopPropagation();
-    this.delete.next('id');
+    this.delete.next('');
   }
 }
