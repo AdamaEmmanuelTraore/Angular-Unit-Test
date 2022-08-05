@@ -5,12 +5,12 @@
     <input #heroName />
   </label>
   <!-- (click) passes input value to add() and then clears the input -->
-  <button (click)="add(heroName.value); heroName.value=''">
+  <button (click)="add(heroName.value); heroName.value=''"> <!--1-->
     add
   </button>
 </div>
 
-<ul class="heroes">
+<ul class="heroes"> <!--2-->
   <li *ngFor="let hero of heroes">
     <app-hero [hero]="hero" (delete)="delete(hero)"></app-hero>
   </li>
